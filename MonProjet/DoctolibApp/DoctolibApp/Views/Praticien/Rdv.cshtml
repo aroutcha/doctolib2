@@ -1,0 +1,35 @@
+﻿@model List<Praticien>
+@{
+    ViewData["Title"] = "Rdv";
+}
+
+<h1>Mes RDV</h1>
+
+@if (Model != null)
+{
+    <div class="container m-10">
+        @foreach (Praticien p in Model)
+        {
+            <a class="bloc-praticien" asp-action="DetailPraticien" asp-controller="Praticien" asp-route-id="@p.Id">
+                <div class="row m-1 bloc-praticien p-5">
+                    <div class="col-3 bloc-image">
+                        <img src="~/@p.Images[0].Url" />
+                    </div>
+                    <div class="col">
+                        <div class="row m-1">
+                            <div class="h1 col">@p.Nom</div>
+                        </div>
+                        <div class="row m-1">
+                            <div class="h1 col">@p.Specialite</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </a>
+
+        }
+    </div>
+}
+
+

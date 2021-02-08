@@ -9,13 +9,11 @@ class Home extends Component {
     }
     render() {
         return (
-            <div>
-                <div className="container">
+            <div className="container d1" >
+               
                     <h1>Réservez une consultation physique chez un professionnel de santé</h1>
-
-                </div>
-                <Search search={this.search}></Search>
-
+                    <Search search={this.search}></Search>
+             
             </div>
 
         );

@@ -1,0 +1,18 @@
+http://localhost:3020/praticien
+
+
+
+{
+           "nom": "Dr Amélie MAITRE",
+           "adresse": "55 Rue de Babylone59491 Villeneuve-d'Ascq",
+           "specialite": "Médecin généraliste",
+           "secteur": "Conventionné secteur 1"
+           
+       }
+       {
+           "nom": "Dr Jonathan FAVRE",
+           "adresse": "11 Rue Traversière, 59650 Villeneuve-d'Ascq",
+           "specialite": "Médecin généraliste",
+           "secteur": "Conventionné secteur 1"
+         
+       }

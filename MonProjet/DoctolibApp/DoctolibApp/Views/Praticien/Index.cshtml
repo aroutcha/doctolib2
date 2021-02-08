@@ -1,0 +1,16 @@
+﻿@model List<Praticien>
+@{
+    ViewData["Title"] = "DoctolibAplication";
+}
+
+
+<form id="searchForm" asp-controller="Praticien" asp-action="SearchAjax" method="get" class="container">
+    <div class="row justify-content-center align-items-center m-1 p-1">
+        <input class="col-8 form-control" placeholder="Rechercher des praticiens..." name="search" />
+        <button type="submit" class="col-2 btn btn-secondary">Rechercher</button>
+    </div>
+</form>
+
+<div id="result">
+
+</div>

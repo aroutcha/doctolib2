@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container">
+    <div class="row justify-content-center align-items-center m-1">
+        <h1 class="col-6">Login</h1>
+    </div>
+</div>
+@if (ViewBag.Message != null)
+{
+    <div class="row justify-content-center align-items-center m-1">
+        <div class="col-6 alert alert-danger">
+            @ViewBag.Message
+        </div>
+    </div>
+}
+<form class="container" asp-controller="Authentication" asp-action="SubmitLogin" method="post">
+    <div class="row justify-content-center align-items-center m-1">
+        <input type="text" placeholder="Votre mail" class="col-6 from-control p-1" name="email" />
+    </div>
+    <div class="row justify-content-center align-items-center m-1">
+        <input type="password" placeholder="Votre mot de passe" class="col-6 from-control p-1" name="motPasse" />
+    </div>
+    <div class="row justify-content-center align-items-center m-1">
+        <button type="submit" class="col-6 btn btn-primary p-1">Valider</button>
+    </div>
+</form>

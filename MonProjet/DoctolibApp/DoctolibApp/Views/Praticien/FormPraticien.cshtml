@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Ajotuer un praticien";
+}
+
+<form class="container" id="FormPraticien" asp-controller="Praticien" asp-action="SubmitFromPraticien" enctype="multipart/form-data" method="post">
+    <div class="row justify-content-center align-items-center m-1 p-1">
+        <input type="text" name="nom" placeholder="Nom" class="field col-8 form-control" />
+    </div>
+    <div class="row justify-content-center align-items-center m-1 p-1">
+        <input type="text" name="specialite" placeholder="Specialite" class="field col-8 form-control" />
+    </div>
+    <div class="row justify-content-center align-items-center m-1 p-1">
+        <input type="text" name="telephone" placeholder="telephone" class="field col-8 form-control" />
+    </div>
+    <div class="row justify-content-center align-items-center m-1 p-1">
+        <input type="text" name="email" placeholder="email" class="field col-8 form-control" />
+    </div>
+    <div class="row justify-content-center align-items-center m-1 p-1">
+        <textarea type="text" name="adresse" placeholder="Adresse" class="field col-8 form-control"></textarea>
+    </div>
+    <div class="row justify-content-center align-items-center m-1 p-1">
+        <input type="file" multiple name="images" class="field col-8 form-control" />
+    </div>
+    <div class="row justify-content-center align-items-center m-1 p-1">
+        <button class="col-8 btn btn-secondary" type="submit">Valider</button>
+    </div>
+</form>
+<div class="row progress">
+    <div class="progress-bar no-gutters">
+
+    </div>
+</div>
